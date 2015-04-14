@@ -102,17 +102,18 @@
 				</section>
 
 				<section> 
-					<h1>(old) Shiny Workflow</h1>
-						<ul>
-							<li class = "fragment" >Doesn't Promote Version Control</li>
-							<li class = "fragment" >Requires SSH</li>
-							<li class = "fragment" >Updating App Data Can Be Tricky</li>							
-							<li class = "fragment" ><b>Ugly Index Page</b></li>
-						</ul>						
+					<section> 
+						<h1>(old) Shiny Workflow</h1>
+							<ul>
+								<li class = "fragment" >Doesn't Promote Version Control</li>
+								<li class = "fragment" >Requires SSH</li>
+								<li class = "fragment" >Updating App Data Can Be Tricky</li>							
+								<li class = "fragment" ><b>Ugly Index Page</b></li>
+							</ul>						
+					</section >
 
-				</section >
-
-				<section data-background = "images/shiny.png"  style = "width:65%" > 
+					<section data-background = "images/shiny.png"  style = "width:65%" > 
+					</section>
 				</section>
 
 				<section> 
@@ -140,13 +141,57 @@
 					<h1>Sparkle Workflow</h1>
 					<img src="images/sparkle_workflow.png"  style = "width:65%"  alt = "sparkle_workflow">	
 				</section>
+
+				<section> 
+					<h1>How?</h1>
+				</section>
 				
 				<section> 
-				<h3>Build Systems</h3>
-				<img src="images/luigi.png" alt = "Luigi">
-				<img src="images/buildbot.png" alt = "Buildbot">
-				<img src="images/jenkins.png" alt = "Jenkins">
+					<h2>Build Automation</h2>
+					<img class = "fragment fade-out" src="images/luigi.png" alt = "Luigi">
+					<img class = "fragment fade-out" src="images/buildbot.png" alt = "Buildbot">
+					<img class = "fragment grow" src="images/jenkins.png" alt = "Jenkins">
 				</section>
+
+				<section> 
+					<h1><img src="images/jenkins.png" alt = "Jenkins"></h1>
+					<p>Provides endpoints for the tasks that we want to automate:</p>
+					<ul style="list-style-type:disc">
+						<li>GitHub Sync</li>
+						<li>Server Restart</li>
+						<li>App Data Refresh</li>
+						<li>App Directory Move</li>
+					</ul>
+				</section>
+
+				<section> 
+					<h2>Example: GitHub Sync</h2>
+					<ol>
+						<li>rsync</li>
+						<li>brew/knitr</li>
+					</ol>
+				</section>
+
+				<section> 
+					<h2>#1 Rsync</h2>
+					<img src="images/rsync.png" style = "width:45%"  alt = "Luigi">
+				</section>
+
+				<section> 
+					<h2>#2 Brew + Knitr</h2>
+					<p>Brew: R package for report templating</p>
+					<p>Knitr: generates html from brew template with knit2html()</p>
+				</section>
+
+				<section data-background-video="images/sparkle.mp4">
+				</section>
+
+				<section>
+					<h2>Interested In AdRoll?</h2>
+					<p>bryan.galvin@adroll.com</p>
+				</section>
+
+
 
 			</div>
 
